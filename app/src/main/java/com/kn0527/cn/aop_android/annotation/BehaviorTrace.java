@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
  * auto：xkn on 2018/3/9 17:49
  * 用来标识性能监测
  */
-@Target(ElementType.METHOD)
+@Target(ElementType.METHOD)//执行作用域 有方法，字段，类名等
 @Retention(RetentionPolicy.RUNTIME)//存活、执行周期
 public @interface BehaviorTrace {
     String value();
